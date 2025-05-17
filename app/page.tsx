@@ -104,15 +104,15 @@ export default function Home() {
               />
             </div>
             <div>
-              <p className="text-lg mb-6">
+              <p className="text-lg text-gray-400 mb-6">
                 Imagine a radiant bride stepping into a moment of bliss with her prince charming -
                 the perfect wedding, just as she envisioned.
               </p>
-              <p className="text-lg mb-6">
+              <p className="text-lg text-gray-400 mb-6">
                 At Stellaux, our mission transcends planning and managing events; we are dedicated
                 to crafting memories that you&apos;ll cherish forever.
               </p>
-              <p className="text-lg">
+              <p className="text-lg text-gray-400">
                 From romantic proposals to joyful baby showers, stylish weddings to heartfelt
                 surprises, we bring your vision to life.
               </p>
