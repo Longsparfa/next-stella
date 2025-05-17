@@ -3,8 +3,8 @@ import { NavLink, Feature, FooterSection } from "./types";
 export const navLinks: NavLink[] = [
   { name: "Home", href: "/" },
   { name: "Services", href: "#services" },
-  { name: "About", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "About", href: "#about" },
+  { name: "FAQ", href: "#faqs" },
 ];
 
 export const features: Feature[] = [
@@ -47,27 +47,17 @@ export const footerData: FooterSection[] = [
   {
     title: "Services",
     links: [
-      { name: "Corporate Events", href: "#" },
-      { name: "Weddings", href: "#" },
-      { name: "Private Parties", href: "#" },
-      { name: "Conferences", href: "#" },
+      { name: "Social Events", href: "#services" },
+      { name: "Corporate Events", href: "#services" },
+      { name: "Fashion Events", href: "#services" },
+      { name: "Event Support", href: "#services" },
     ],
   },
   {
     title: "Company",
     links: [
-      { name: "About", href: "#" },
-      { name: "Team", href: "#" },
-      { name: "Testimonials", href: "#" },
-      { name: "Contact", href: "#" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { name: "Privacy", href: "#" },
-      { name: "Terms", href: "#" },
-      { name: "Cookies", href: "#" },
+      { name: "About", href: "#about" },
+      { name: "FAQ", href: "#faqs" },
     ],
   },
 ];

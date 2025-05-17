@@ -7,13 +7,31 @@ import { Icon } from '@/app/components/UI/Icon';
 import { BookingFormData } from '@/app/lib/types';
 
 
+
 const eventTypes = [
+    //Social Events
     { value: '', label: 'Select an event type' },
-    { value: 'Corporate', label: 'Corporate Event' },
-    { value: 'Wedding', label: 'Wedding' },
-    { value: 'Birthday', label: 'Birthday Party' },
-    { value: 'Conference', label: 'Conference' },
-    { value: 'Other', label: 'Other' },
+    { value: 'birthday', label: 'Birthday Party' },
+    { value: 'engagement', label: 'Engagement Proposal' },
+    { value: 'wedding', label: 'Wedding' },
+    { value: 'bridal-shower', label: 'Bridal Shower' },
+    { value: 'baby-shower', label: 'Baby Shower' },
+
+    // Corporate Events
+    { value: 'conference', label: 'Conference', },
+    { value: 'seminar', label: 'Seminar', },
+    { value: 'product-launch', label: 'Product Launch', },
+    { value: 'gala', label: 'Gala Dinner', },
+
+    // Fashion Events
+    { value: 'fashion-show', label: 'Fashion Show', },
+    { value: 'model-casting', label: 'Model Casting', },
+    { value: 'runway-production', label: 'Runway Production', },
+
+    // Event Support
+    { value: 'ushers', label: 'Professional Ushers', },
+    { value: 'event-staff', label: 'Event Staffing', },
+    { value: 'logistics', label: 'Logistics Management' },
 ];
 
 const guestOptions = [
@@ -56,7 +74,7 @@ export default function BookingForm() {
         }
 
         try {
-            const response = await fetch('https://formsubmit.co/ajax/your@email.com', {
+            const response = await fetch('https://formsubmit.co/ajax/stellaigwe99@gmail.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -90,7 +108,7 @@ export default function BookingForm() {
                 <h3 className="text-lg font-medium text-gray-900">Event Information</h3>
             </div>
 
-            <div className="px-6 py-5 space-y-6">
+            <div className="px-6 py-5 space-y-8">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">

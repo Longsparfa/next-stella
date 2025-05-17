@@ -6,7 +6,7 @@ import { CheckCircleIcon } from '@heroicons/react/16/solid';
 
 
 export const metadata: Metadata = {
-  title: 'Thank You | Stella Events',
+  title: 'Thank You | Stellaux Global',
   description: 'Thank you for your booking request',
 };
 
@@ -45,7 +45,7 @@ export default function ThankYouPage() {
             <div className="flex-auto">
               <div className="text-sm leading-6 text-gray-600">
                 <p className="font-medium text-gray-900">Email us</p>
-                <p className="mt-1">events@stella.com</p>
+                <p className="mt-1">stellaigwe99@gmail.com</p>
               </div>
             </div>
             <div className="flex-auto">

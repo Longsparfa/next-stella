@@ -6,11 +6,11 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Stella Events | Premium Event Planning',
-    template: '%s | Stella Events'
+    default: 'Stellaux Global | Premium Event Planning',
+    template: '%s | Stellaux Global'
   },
   description: 'Creating unforgettable experiences for your special occasions',
-  keywords: ['events', 'wedding', 'corporate', 'planning'],
+  keywords: ['events', 'wedding', 'Stellaux Global', 'planning'],
   themeColor: '#4f46e5',
 };
 
