@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link';
 import { navLinks, footerData } from '@/app/lib/constants';
 import { Button } from '@/app/components/UI/Button';
@@ -7,17 +9,25 @@ import heroImage from '@/public/trad-couple.jpeg'
 import weddingImage from '@/public/bride.jpeg'
 import { ServiceCard } from './components/ServiceCard';
 import { FAQAccordion } from './components/FAQAccordion';
+import { useState } from 'react';
+import { Bars2Icon, XMarkIcon } from '@heroicons/react/16/solid';
+
 
 export default function Home() {
+  const [showMenu, setShowMenu] = useState(false)
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu)
+  }
   return (
     <>
-      <nav className="bg-white shadow-sm sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="bg-white shadow-sm sticky top-0 z-10 ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link href={'/'} className="text-xl font-bold text-indigo-600">Stellaux Global</Link>
             </div>
-            <div className="hidden sm:flex md:flex items-center space-x-8">
+            <div className="hidden sm:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -35,6 +45,30 @@ export default function Home() {
               >
                 Book Now
               </Button>
+            </div>
+            <div className='sm:hidden' onClick={toggleMenu}>
+              <span className='flex justify-end pt-4 mb-4'>
+                {showMenu ? <XMarkIcon className='h-12 w-12 text-gray-700' /> : <Bars2Icon className='w-12 h-12 text-gray-700' />}
+              </span>
+              {showMenu && <div className="bg-indigo-600 flex flex-col items-center rounded-md gap-4 space-x-8 py-4 pl-4">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className="text-gray-100 text-center hover:text-indigo-600 transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+                <Button
+                  asLink={true}
+                  href="/book"
+                  variant="primary"
+                  className="px-4 py-2 text-sm"
+                >
+                  Book Now
+                </Button>
+              </div>}
             </div>
           </div>
         </div>

@@ -51,7 +51,7 @@ export default function ThankYouPage() {
             <div className="flex-auto">
               <div className="text-sm leading-6 text-gray-600">
                 <p className="font-medium text-gray-900">Call us</p>
-                <p className="mt-1">+234 80 123-4567</p>
+                <p className="mt-1">+234 90 2928-6664</p>
               </div>
             </div>
           </div>
