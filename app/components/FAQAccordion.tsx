@@ -58,7 +58,7 @@ export function FAQAccordion() {
             {faqs.map((faq, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
                     <button
-                        className="w-full flex items-center justify-between px-6 py-4 text-left font-medium font-[Cursive] text-indigo-600 bg-gray-50 hover:bg-gray-100 focus:outline-none"
+                        className="w-full flex items-center justify-between px-6 py-4 text-left font-medium font-[Manrope] text-indigo-600 bg-gray-50 hover:bg-gray-100 focus:outline-none"
                         onClick={() => toggleAccordion(index)}
                     >
                         {faq.question}

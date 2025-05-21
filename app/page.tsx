@@ -32,7 +32,7 @@ export default function Home() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="font-[Cursive] text-indigo-600 hover:text-gray-700 transition-colors"
+                  className="font-[Manrope] text-indigo-600 hover:text-gray-700 transition-colors"
                 >
                   {link.name}
                 </Link>
@@ -41,7 +41,7 @@ export default function Home() {
                 asLink={true}
                 href="/book"
                 variant="primary"
-                className="px-4 py-2 font-[Fantasy] text-sm text-center"
+                className="px-4 py-2 font-[Manrope] text-sm text-center"
               >
                 Book Now
               </Button>
@@ -55,7 +55,7 @@ export default function Home() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="font-[Cursive] text-gray-100 text-center hover:text-indigo-600 transition-colors"
+                    className="font-[Manrope] text-gray-100 text-center hover:text-indigo-600 transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -89,7 +89,7 @@ export default function Home() {
           <p className="font-[Poppins] text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
             Where we transform ordinary days into unforgettable memories.
           </p>
-          <Button asLink href="/book" variant="primary" size="lg" className='font-[Cursive]'>
+          <Button asLink href="/book" variant="primary" size="lg" className='font-[Manrope]'>
             Book Your Event
           </Button>
         </div>
@@ -184,7 +184,7 @@ export default function Home() {
                         <Link
                           key={link.name}
                           href={link.href}
-                          className="font-[Cursive] text-base text-indigo-700 hover:text-indigo-300 transition-colors"
+                          className="font-[Manrope] text-base text-indigo-700 hover:text-indigo-300 transition-colors"
                         >
                           {link.name}
                         </Link>
