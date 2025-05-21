@@ -105,14 +105,14 @@ export default function BookingForm() {
     return (
         <form onSubmit={handleSubmit} className="divide-y divide-gray-200">
             <div className="px-6 py-5">
-                <h3 className="text-lg font-medium text-gray-900">Event Information</h3>
+                <h3 className="text-xl font-[Inter] font-medium text-gray-900">Event Information</h3>
             </div>
 
             <div className="px-6 py-5 space-y-8">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                            Full Name *
+                        <label htmlFor="name" className="block text-lg font-[Inter] font-bold text-gray-700">
+                            Full Name <span className='text-red-500 text-xl'>*</span>
                         </label>
                         <div className="mt-1 relative rounded-md shadow-sm">
                             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -124,15 +124,15 @@ export default function BookingForm() {
                                 id="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
+                                className="font-[Poppins] focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
                                 required
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                            Email Address *
+                        <label htmlFor="email" className="block text-lg font-[Inter] font-bold text-gray-700">
+                            Email Address <span className='text-red-500 text-xl'>*</span>
                         </label>
                         <div className="mt-1 relative rounded-md shadow-sm">
                             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -144,14 +144,14 @@ export default function BookingForm() {
                                 id="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
+                                className="font-[Poppins] focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
                                 required
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                        <label htmlFor="phone" className="block text-lg font-[Inter] font-bold text-gray-700">
                             Phone Number
                         </label>
                         <div className="mt-1 relative rounded-md shadow-sm">
@@ -164,21 +164,21 @@ export default function BookingForm() {
                                 id="phone"
                                 value={formData.phone}
                                 onChange={handleChange}
-                                className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
+                                className="font-[Poppins] focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="eventType" className="block text-sm font-medium text-gray-700">
-                            Event Type *
+                        <label htmlFor="eventType" className="block text-lg font-[Inter] font-bold text-gray-700">
+                            Event Type <span className='text-red-500 text-xl'>*</span>
                         </label>
                         <select
                             id="eventType"
                             name="eventType"
                             value={formData.eventType}
                             onChange={handleChange}
-                            className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-gray-400 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                            className="mt-1 font-[Poppins] block w-full pl-3 pr-10 py-2 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
                             required
                         >
                             {eventTypes.map((option) => (
@@ -190,8 +190,8 @@ export default function BookingForm() {
                     </div>
 
                     <div>
-                        <label htmlFor="eventDate" className="block text-sm font-medium text-gray-700">
-                            Event Date *
+                        <label htmlFor="eventDate" className="block text-lg font-[Inter] font-bold text-gray-700">
+                            Event Date <span className='text-red-500 text-xl'>*</span>
                         </label>
                         <div className="mt-1 relative rounded-md shadow-sm">
                             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -203,14 +203,14 @@ export default function BookingForm() {
                                 id="eventDate"
                                 value={formData.eventDate}
                                 onChange={handleChange}
-                                className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 text-gray-400 sm:text-sm border-gray-300 rounded-md py-2"
+                                className="font-[Poppins] focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
                                 required
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="guests" className="block text-sm font-medium text-gray-700">
+                        <label htmlFor="guests" className="block text-lg font-[Inter] font-bold text-gray-700">
                             Estimated Guests
                         </label>
                         <select
@@ -218,7 +218,7 @@ export default function BookingForm() {
                             name="guests"
                             value={formData.guests}
                             onChange={handleChange}
-                            className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-gray-400 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                            className="font-[Poppins] mt-1 block w-full pl-3 pr-10 py-2 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
                         >
                             {guestOptions.map((option) => (
                                 <option key={option.value} value={option.value}>
@@ -230,7 +230,7 @@ export default function BookingForm() {
                 </div>
 
                 <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="message" className="block text-lg font-[Inter] font-bold text-gray-700">
                         Additional Details
                     </label>
                     <textarea
@@ -239,7 +239,7 @@ export default function BookingForm() {
                         rows={4}
                         value={formData.message}
                         onChange={handleChange}
-                        className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full text-gray-400 sm:text-sm border border-gray-300 rounded-md p-2"
+                        className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 font-[Poppins] mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"
                         placeholder="Tell us about your event needs..."
                     />
                 </div>
@@ -250,7 +250,7 @@ export default function BookingForm() {
                     type="submit"
                     variant="primary"
                     disabled={isSubmitting}
-                    className="px-4 py-2 text-sm"
+                    className="font-[Cursive] px-4 py-2 text-sm"
                 >
                     {isSubmitting ? 'Processing...' : 'Submit Booking Request'}
                 </Button>

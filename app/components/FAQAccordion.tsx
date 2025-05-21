@@ -1,5 +1,6 @@
 'use client';
 
+import { ChevronDownIcon } from '@heroicons/react/16/solid';
 import { useState } from 'react';
 
 const faqs = [
@@ -57,15 +58,16 @@ export function FAQAccordion() {
             {faqs.map((faq, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
                     <button
-                        className="w-full px-6 py-4 text-left font-medium text-gray-900 bg-gray-50 hover:bg-gray-100 focus:outline-none"
+                        className="w-full flex items-center justify-between px-6 py-4 text-left font-medium font-[Cursive] text-indigo-600 bg-gray-50 hover:bg-gray-100 focus:outline-none"
                         onClick={() => toggleAccordion(index)}
                     >
                         {faq.question}
+                        <ChevronDownIcon width={20} height={20} />
                     </button>
                     <div
-                        className={`px-6 py-4 bg-white transition-all duration-300 ${activeIndex === index ? 'block' : 'hidden'}`}
+                        className={`px-6 py-4 bg-indigo-100 transition-all duration-300 ${activeIndex === index ? 'block' : 'hidden'}`}
                     >
-                        <p className="text-gray-600">{faq.answer}</p>
+                        <p className="font-[Poppins] text-indigo-600">{faq.answer}</p>
                     </div>
                 </div>
             ))}
