@@ -27,7 +27,7 @@ export default function Home() {
             <div className="flex items-center">
               <Link href={'/'} className="hidden sm:block font-[Didot] text-xl font-bold text-indigo-600">Stellaux Global</Link>
             </div>
-            <div className="flex items-center space-x-8">
+            <div className="flex items-center space-x-6 sm:space-x-8 overflow-hidden">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
