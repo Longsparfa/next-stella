@@ -178,7 +178,7 @@ export default function BookingForm() {
                             name="eventType"
                             value={formData.eventType}
                             onChange={handleChange}
-                            className="mt-1 font-[Poppins] block w-full pl-3 pr-10 py-2 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                            className="mt-1 font-[Poppins] text-gray-700 block w-full pl-3 pr-10 py-2 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
                             required
                         >
                             {eventTypes.map((option) => (
@@ -203,7 +203,7 @@ export default function BookingForm() {
                                 id="eventDate"
                                 value={formData.eventDate}
                                 onChange={handleChange}
-                                className="font-[Poppins] focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
+                                className="font-[Poppins] text-gray-700 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
                                 required
                             />
                         </div>
@@ -218,7 +218,7 @@ export default function BookingForm() {
                             name="guests"
                             value={formData.guests}
                             onChange={handleChange}
-                            className="font-[Poppins] mt-1 block w-full pl-3 pr-10 py-2 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                            className="font-[Poppins] text-gray-700 mt-1 block w-full pl-3 pr-10 py-2 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
                         >
                             {guestOptions.map((option) => (
                                 <option key={option.value} value={option.value}>
@@ -239,7 +239,7 @@ export default function BookingForm() {
                         rows={4}
                         value={formData.message}
                         onChange={handleChange}
-                        className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 font-[Poppins] mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"
+                        className="shadow-sm text-gray-700 focus:ring-indigo-500 focus:border-indigo-500 font-[Poppins] mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"
                         placeholder="Tell us about your event needs..."
                     />
                 </div>
@@ -250,7 +250,7 @@ export default function BookingForm() {
                     type="submit"
                     variant="primary"
                     disabled={isSubmitting}
-                    className="font-[Cursive] px-4 py-2 text-sm"
+                    className="font-[Manrope] px-4 py-2 text-sm"
                 >
                     {isSubmitting ? 'Processing...' : 'Submit Booking Request'}
                 </Button>

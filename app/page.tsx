@@ -27,25 +27,23 @@ export default function Home() {
             <div className="flex items-center">
               <Link href={'/'} className="hidden sm:block font-[Didot] text-xl font-bold text-indigo-600">Stellaux Global</Link>
             </div>
-            <div className="flex items-center space-x-6 sm:space-x-8 overflow-hidden">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="font-[Manrope] text-indigo-600 hover:text-gray-700 transition-colors"
-                >
-                  {link.name}
-                </Link>
-              ))}
-              <Button
-                asLink={true}
-                href="/book"
-                variant="primary"
-                className="px-4 py-2 font-[Manrope] text-sm text-center"
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="font-[Manrope] text-indigo-600 hover:text-gray-700 transition-colors"
               >
-                Book Now
-              </Button>
-            </div>
+                {link.name}
+              </Link>
+            ))}
+            <Button
+              asLink={true}
+              href="/book"
+              variant="primary"
+              className="px-4 py-2 font-[Manrope] text-sm text-center"
+            >
+              Book Now
+            </Button>
             <div className='hidden sm:hidden' onClick={toggleMenu}>
               <span className='flex justify-end pt-4 mb-4'>
                 {showMenu ? <XMarkIcon className='h-12 w-12 text-gray-700' /> : <Bars2Icon className='w-12 h-12 text-gray-700' />}
