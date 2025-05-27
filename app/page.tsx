@@ -121,8 +121,8 @@ export default function Home() {
                 From romantic proposals to joyful baby showers, stylish weddings to heartfelt
                 surprises, we bring your vision to life.
               </p>
-              <p className='mb-6'>Step into a world where every detail is curated to perfection. At Stellaux Events, we specialize in transforming your visions into memorable expeeriences. Our expertise spans a diverse range of events, including Social gatherings, corporate functions, entertainment showcases, fashion events, networking meetups, experiential activations, and educational seminars.</p>
-              <p className='mb-6'>Why Choose Us?<br />Because we don&apos;t just plan events, we craft expeeriences. Our dedicated team is committed to excellence, ensuring that every aspect of your event is meticulously planned and flawlessly executed. We thrive on bringing your unique vision to life, creating events that leave a lasting impression.</p>
+              <p className='mb-6'>Step into a world where every detail is curated to perfection. At Stellaux Events, we specialize in transforming your visions into memorable experiences. Our expertise spans a diverse range of events, including Social gatherings, corporate functions, entertainment showcases, fashion events, networking meetups, experiential activations, and educational seminars.</p>
+              <p className='mb-6'>Why Choose Us?<br />Because we don&apos;t just plan events, we craft experiences. Our dedicated team is committed to excellence, ensuring that every aspect of your event is meticulously planned and flawlessly executed. We thrive on bringing your unique vision to life, creating events that leave a lasting impression.</p>
               <p>Ready to Elevate Your Event?<br />Let&apos;s turn your ideas into reality. Book a consultation with us today, and embark on a journey to create an event that transcends the ordinary. </p>
             </div>
           </div>
