@@ -124,7 +124,7 @@ export default function BookingForm() {
                                 id="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="font-[Poppins] focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
+                                className="font-[Poppins] text-gray-700 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
                                 required
                             />
                         </div>
@@ -144,7 +144,7 @@ export default function BookingForm() {
                                 id="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="font-[Poppins] focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
+                                className="font-[Poppins] text-gray-700 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
                                 required
                             />
                         </div>
@@ -164,7 +164,7 @@ export default function BookingForm() {
                                 id="phone"
                                 value={formData.phone}
                                 onChange={handleChange}
-                                className="font-[Poppins] focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
+                                className="font-[Poppins] text-gray-700 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-2"
                             />
                         </div>
                     </div>
