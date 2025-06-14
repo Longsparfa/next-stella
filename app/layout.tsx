@@ -2,6 +2,7 @@ import './globals.css';
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -11,7 +12,10 @@ export const metadata: Metadata = {
   },
   description: 'Creating unforgettable experiences for your special occasions',
   keywords: ['events', 'wedding', 'Stellaux Global', 'planning'],
-  // themeColor: '#4f46e5',
+  metadataBase: new URL('https://stellauxglobal.com'),
+  other: {
+    'google-site-verification': 'CPETsjYMiALL0aR9ZIbImFTOBcEEEnIkeEEEG0-77IU'
+  }
 
 };
 
