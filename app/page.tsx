@@ -23,8 +23,8 @@ export default function Home() {
   return (
     <>
       <nav className="bg-indigo-100 shadow-sm sticky top-0 z-10 ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="flex justify-between h-16">
+        <div className="max-w-7xl mx-auto px-1 sm:px-6 lg:px-8 relative">
+          <div className="flex items-center justify-center sm:justify-between h-16">
             <div className="flex items-center">
               <Link href={'/'} className="hidden sm:block font-[Didot] text-xl font-bold text-indigo-600">Stellaux Global</Link>
             </div>
