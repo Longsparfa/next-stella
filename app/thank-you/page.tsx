@@ -47,7 +47,7 @@ export default function ThankYouPage() {
               <div className="flex-auto">
                 <div className="text-sm leading-6 text-gray-600">
                   <p className="font-[Poppins] font-medium text-gray-900">Email us</p>
-                  <p className="mt-1 font-[Poppins]">stellaigwe99@gmail.com</p>
+                  <p className="mt-1 font-[Poppins]">info@stellauxglobal.com</p>
                 </div>
               </div>
               <div className="flex-auto">
